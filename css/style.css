@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.medsos{ 
+    padding: 5px 0;
+    background-color: #0e9480 ;
+} 
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 10 px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header h1{
+    float: left;
+    padding: 10px 0;
+    color: #0e9480;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover{
+    background-color: #0e9480;
+    color:#fff;
+}
+.active{
+    background-color: #0e9480;
+    color:#fff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(170, 252, 245);}
+
+.wallpaper{
+    height: 60vh;
+    background-image: url("../wallpaper.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wallpaper:after {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 148, 128, 0.6);
+}
+.wallpaper h2{
+    color:#fff;
+    z-index: 1;
+    padding: 20PX 25PX;
+    border: 3px solid #fff;
+}
+section{
+    padding: 50px 0;
+    display: flex;
+    background-color: rgb(29, 172, 172);
+    width: 100%;
+    column-gap: 10px;
+background-color: #f9f9f9;}
+    
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    color: #0e9480;
+    background-color: #f9f9f9;
+}
+.about {
+    padding-bottom: 100px;
+}
+.about p {
+    color:black;
+    word-spacing: 3px;
+    line-height: 35px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+}
+.service {
+    background-color: #f9f9f9;
+}
+.box {
+    border: 1px solid ;
+    color: #0e9480;
+}
+.box:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.box .col-4 h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+}
+.label {
+    background-color: #0e9480;
+    color: #fff;
+    padding: 20px;
+}
+.about {
+    text-align: center;
+    text-size-adjust: 28px 0;
+   margin-bottom: 20px;
+}
+@media screen and (max-width:768px){
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    .box .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #fb0066;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
